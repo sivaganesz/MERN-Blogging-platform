@@ -46,7 +46,7 @@ export const Login = () => {
       const response = await axios.post(`${baseUrl}/users/login`, userData);
       const user = response.data;
       setCurrentUser(user);
-      setPopupMessage('Login successful!');
+      setPopupMessage('Login successfull!');
       setPopupIcon(login)
       setShowPopup(true);
       

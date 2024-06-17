@@ -52,7 +52,7 @@ export const Register = () => {
         setError("Couldn;t register user.please try again")
       }
       setShowPopup(true);
-      setPopupMessage('Update Successful!..');
+      setPopupMessage('Registration Successfull!..');
       setPopupIcon(gif);
       setTimeout(() => {
         setShowPopup(false);

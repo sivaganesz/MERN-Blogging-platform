@@ -17,7 +17,7 @@ export const Logout = () => {
 
   const handleLogout = () => {
     setCurrentUser(null);
-    setPopupMessage('Logout successful!');
+    setPopupMessage('Logout successfull!');
     setPopupIcon(logoutIcon)
     setShowPopup(true);
     setTimeout(() => {
