@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900');
+
+body{
+  font-family:"Poppins","sans-serif";
+}
+:root{
+  --color-primary:#6f6af8;
+  --color-white:#fff;
+  --color-red:rgb(255,63,63);
+  --color-gray-100: hsl(220,20%,10%,5%);
+  --color-gray-200: hsl(220,20%,10%,10%);
+  --color-gray-300: hsl(220,20%,10%,25%);
+  --color-gray-500: hsl(220,20%,10%,50%);
+  --color-gray-700: #252542;
+  --color-gray-900: #0c0c22;
+
+--color-bg:hwb(240,95%,0%);
+--transition: all 300ms ease;
+
+--container-width-lg:84%;
+--container-width-md:92%;
+--form-width:50%;
+
+--radius-1:0.3rem;
+--radius-2:0.6rem;
+--radius-3:1rem;
+--radius-4:2rem;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  border:0;
+  outline:0;
+  box-sizing:border-box;
+}
+
+.profile__container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.profile__details {
+  width: 100%;
+}
+
+.avatar__wrapper {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+.profile__avatar {
+  height: 100%;
+  border-radius: 50%;
+  border: 0.7rem solid var(--color-gray-300);
+  overflow: hidden;
+}
+
+.profile__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar__form {
+  height: 1rem;
+}
+
+.avatar__form input {
+  visibility: hidden;
+}
+
+.avatar__form label, .profile__avatar-btn {
+  background-color: rgb(51, 46, 74);
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  right: 0rem;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.profile__avatar-btn {
+  padding: 0%;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #6f6af8;
+
+}
+
+.form.profile__form{
+  margin-top: 2rem;
+  margin-inline: auto;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input,select,textarea{
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: radius 5px;
+  resize: none; 
+}
+
+.form__error_message{
+  background-color: rgb(194, 71, 71);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* react-quill */
+
+.ql-editor{
+  overflow: scroll;
+  background-color: #fff;
+  height: 7rem !important;
+}
+
+/* media quries */
+
+@media screen and (max-width:800px){
+  .nav__container{
+    position: relative;
+  }
+
+  .nav__menu{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__menu li {
+    width: 100%;
+    box-shadow: -2rem 4rem 4rem rgba(0,0,0,0.26);
+  }
+
+  .nav__menu li a{
+
+  display:block;
+  background: white;
+  padding: 0.5rem 0.5rem;
+  }
+
+  .nav__toggle-btn{
+    display: inline-block;
+    background: transparent;
+    font-size: 1.5rem;
+
+  }
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
