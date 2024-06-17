@@ -35,7 +35,7 @@ export const DeletePost = ({ postId }) => {
           navigate(0)
         } else {
           setShowPopup(true);
-          setPopupMessage('Registration Successfull!..');
+          setPopupMessage('Post Deleted !..');
           setPopupIcon(deleteIcon);
           setTimeout(() => {
             setShowPopup(false);
