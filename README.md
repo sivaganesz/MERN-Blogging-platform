@@ -4,11 +4,11 @@ Mern Blogging platform allows users to effortlessly write and publish blog posts
 
 🔧 Technology Stack:
 
-# Frontend: React.js
-# Backend: Express.js
-# Server-side: Node.js
-# Database: MongoDB
-# Key features include:
+ Frontend: React.js
+ Backend: Express.js
+ Server-side: Node.js
+ Database: MongoDB
+ Key features include:
 
 Intuitive interface for writing and editing posts
 Secure storage of all blog posts
