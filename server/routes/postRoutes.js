@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // postRoutes.js
 const express = require('express');
 const   router = express.Router();
@@ -64,3 +65,23 @@ router.put('/:id/comment', authMiddleware, async (req, res) => {
 
 
 module.exports = router;
+=======
+// postRoutes.js
+
+const express = require('express');
+const router = express.Router();
+const authMiddleware = require('../middleware/authMiddleware')
+const {createPost,getPosts,getPost,getCatPosts,getUserPosts,editPost,deletePost}=require('../controllers/postControllers')
+// Define routes
+router.post('/',authMiddleware,createPost)
+router.get('/',getPosts)
+router.get('/:id',getPost)
+router.get('/categories/:category',getCatPosts)
+router.get('/users/:id',getUserPosts)
+router.patch('/:id',authMiddleware,editPost)
+router.delete('/:id',authMiddleware,deletePost) 
+
+
+
+module.exports = router;
+>>>>>>> 8e56e10c44ed715152572326d6bfe6ee3e1ca8fe
